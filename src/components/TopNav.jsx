@@ -37,7 +37,7 @@ const handleInputChange=(e)=>{
             {isOpen? <IoIosClose size={25}/> :<FaBars size={18}/>}
         </button>
         {/* Logo */}
-       <Link to='/'> <img src='public\usafi_plus-removebg-preview.png' alt='logo' className='w-200px h-[40px]' /> </Link>
+       <Link to='/'> <img src='../public/usafi_plus-removebg-preview.png' alt='logo' className='w-200px h-[40px]' /> </Link>
         {/*search bar*/}
         <form className='flex items-center justify-between rounded-full border border-gray-200 w-[500px]'>
             <input type='text' name='search' value={input.search} onChange={handleInputChange} placeholder='Search here...' className='text-[12px] ml-5 outline-none p-1.5'/>
