@@ -1,0 +1,28 @@
+// import React from 'react'
+import{BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import DynamicRouteProvider from './DynamicRouteProvider'
+import Home from './Home'
+import Contact from './Contact'
+import SustainableProjects from './SustainableProjects'
+import Careers from './Careers'
+import Services from './Services'
+import AboutUs from './AboutUs'
+
+
+
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<DynamicRouteProvider element={<Home />} title='UsafiPlus | Home'/>}/>
+        <Route path='/about us' element={<DynamicRouteProvider element={<AboutUs />} title='UsafiPlus | About us'/>}/>
+        <Route path='/services' element={<DynamicRouteProvider element={<Services />} title='UsafiPlus | Services'/>}/>
+        <Route path='/careers' element={<DynamicRouteProvider element={<Careers />} title='UsafiPlus | Careers'/>}/>
+        <Route path='/sustainable projects' element={<DynamicRouteProvider element={<SustainableProjects />} title='UsafiPlus | sustainable projects'/>}/>
+        <Route path='/contact' element={<DynamicRouteProvider element={<Contact />} title='UsafiPlus | contact'/>}/>
+      </Routes>
+    </Router>
+  )
+}
+
+export default App
