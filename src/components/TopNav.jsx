@@ -38,7 +38,7 @@ const TopNav = () => {
                     <img 
                         src="/usafi_plus-removebg-preview.png" 
                         alt="logo" 
-                        className="h-auto w-[150px] sm:w-[120px] md:w-[55px] object-contain" 
+                        className="h-auto w-[150px] ml-5 lg:ml-0 sm:w-[120px] md:w-[55px] object-contain" 
                     />
                 </Link>
 
