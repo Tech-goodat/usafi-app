@@ -27,9 +27,9 @@ const TopNav = () => {
     return (
         <div className="w-full">
             {/* Top Navigation */}
-            <div className="flex fixed top-0 z-50 w-full h-[50px] bg-white items-center justify-between shadow-md px-5">
+            <div className="flex fixed top-0 z-50 w-full h-[50px] bg-white items-center justify-between  px-5">
                 {/* SideNav Toggle Button */}
-                <button onClick={toggleButtons} className="mr-2">
+                <button onClick={toggleButtons} className="mr cursor-pointer">
                     {isOpen ? <IoIosClose size={25} /> : <FaBars size={18} />}
                 </button>
 
@@ -69,7 +69,7 @@ const TopNav = () => {
             </div>
 
             {/* SideNav */}
-            <div className={`fixed left-0 top-[50px] h-screen w-[250px] bg-gray-100 shadow-sm transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300`}>
+            <div className={`fixed left-0 top-[50px] h-screen w-[200px] bg-gray-100 shadow-sm transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300`}>
                 <SideNav />
             </div>
         </div>
