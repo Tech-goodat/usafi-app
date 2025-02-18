@@ -15,10 +15,11 @@ import Login from './Login'
 
 
 
+
 const App = () => {
   return (
     <Router>
-      <div className='bg-gray-100 text-black flex flex-col  w-full min-h-screen'>
+      <div className='bg-gradient-to-b from-green-50 to-gray-100 text-black flex flex-col  w-full min-h-screen'>
       <TopNav />
       <div className='flex w-full flex-1'>
       <Routes>
@@ -33,6 +34,7 @@ const App = () => {
       </Routes>
       </div>
       </div>
+      
     </Router>
   )
 }

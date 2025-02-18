@@ -11,7 +11,7 @@ import { MdHome } from "react-icons/md";
 
 const SideNav = () => {
   return (
-    <div className='flex flex-col gap-5   w-full h-full bg-gray-100 items-center'>
+    <div className='flex flex-col gap-5   w-full h-full bg-gradient-to-b from-green-50 to-inherit  items-center'>
       <div className='flex w-full items-center md:hidden   mt-10 ml-5  rounded-md   text-gray-600 font-bold text-sm'><Link className='flex w-full p-1 items-center hover:bg-green-200 hover:rounded-sm  hover:w-[180px] gap-2'  to='/'><MdHome size={20} className="ml-2" />Home</Link></div>
       <div className='flex w-full items-center   md:mt-10 ml-5  rounded-md   text-gray-600 font-bold text-sm'><Link className='flex w-full p-1 items-center hover:bg-green-200 hover:rounded-sm  hover:w-[180px] gap-2'  to='/about us'><IoInformationCircleOutline className='ml-2'/>About us</Link></div>
       <div className='flex w-full items-center ml-5  rounded-md   text-gray-600 font-bold text-sm'><Link className='flex w-full p-1 items-center hover:bg-green-200 hover:rounded-sm  hover:w-[180px] gap-2'  to='/Services'><LuClipboardCheck className='ml-2'/>Services</Link></div>
